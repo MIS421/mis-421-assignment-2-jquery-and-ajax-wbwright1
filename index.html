@@ -4,13 +4,40 @@
 
 <head>
 
-  <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous"></script>
+
+    <!--JQuery UI-->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css" integrity="sha384-s5lqL1NMu1TdDS/75EsR2IKqj5g2SbplE63nRqwT70/kcm2uFLqKGOCp1phJ2ENd" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous"></script>
+
+    <title>Wright Search</title>
 
 </head>
 
 <body>
+    <div>
+        <script type="text/javascript" src="script.js"></script>
+    </div>
 
-  <script type="text/javascript" src="./script.js"></script>
+    <header onload="pageRefresh()">Wright Search</header>
+
+    <div id="searchBar">
+        <input type="text" id="query" name="query" placeholder="Enter search here" />
+        <button type="button" id="searchButton" onclick="searchResults()">Search</button>
+        <button type="button" id="timeButton" onclick="displayTime()">Show Time</button>
+    </div>
+
+    <div>
+        <br><br />
+        <button type="button" onclick="changeBackground()">Change Background</button>
+    </div>
+
+    <div id="searchResults"></div>
+    <div id="time"></div>
 
 </body>
 
